@@ -25,3 +25,5 @@ Part1
 =====
 
 Modified the header of the 3 HTML files by removing their style tag and replacing it with a link to the new "styles.css" file I created, aswell as specifying the "stylesheet" relationship.
+
+I also had to rename the content directories for the three websites, and thus had to update all of the references to the cover photos with the new paths.
