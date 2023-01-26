@@ -83,7 +83,7 @@
             margin-top: 2vh;
             margin-bottom: 2vh;
             align-self:flex-end;
-            background-color: rgb(200, 209, 218);
+            background-color: rgb(197, 203, 207);
             border-radius: 1%;
         }
 
@@ -94,13 +94,13 @@
             margin-top: 2vh;
             margin-bottom: 2vh;
             border-radius: 1%;
-            background-color: rgb(200, 209, 218);
+            background-color: rgb(197, 203, 207);
         }
 
         .sidebarheader {
             height: 5vh;
             width: 15vw;
-            background-color: rgb(187, 183, 183);
+            background-color: #aaa;
             font-family:sans-serif;
             font-weight: lighter;
             text-align: center;
@@ -112,10 +112,20 @@
             height: 5vh;
             width: 20vw;
             background-color: #aaa;
+            font-family:sans-serif;
+            border-radius: 5%;
+
+        }
+
+        .text {
             font-family: sans-serif;
             font-weight: lighter;
             text-align: center;
-            line-height: 5vh;
+            width: 40vw;
+            margin-left:0;
+            color: rgb(51, 50, 50);
+            text-align: start;
+            transform: translateX(-5vw);
         }
 
         .textsection {
@@ -135,12 +145,26 @@
         }
 
         .textblob {
-            display: inline-block;
+            display: flex;
+            flex-direction: row;
             height: 33%;
             width: 60vw;
-            background-color: rgb(179, 186, 192);
-            border-radius: 1%;
-            
+            background-color: rgb(197, 203, 207);
+            border-radius: 2%;
+            font-family: sans-serif;
+            font-weight: lighter;
+            text-align: center;
+            justify-content: flex-start;
+            align-content: flex-start;
+            line-height: 5vh;
+
+        }
+
+        .pugpic {
+            border-radius: 30%;
+            height: 23vh;
+            width: 23vh;
+            transform: translateX(-14vw) translateY(5.5vh);
         }
     </style>
 </head>
@@ -168,11 +192,20 @@
 
     <div class="blog">
         <div class="textsection">
-        
+            
             <div class="textblob row-1-text" style="margin-top:5vh;">
                 <div class="textblobheader">
                     Who Am I?
                 </div>
+                <img src="./content/meinitaly.jpeg" class="pugpic">
+                
+                <div class="text">
+                    Hello there! My name is Andrew Culberson, and I am a soon to be graduate from the Computer Engineering - Software Co-op program
+                    at the University of Alberta. I enjoy writing code, making music and climbing rocks. If you also enjoy these things, and wish to
+                    discuss our common enjoyment of said things, feel free to reach out :)
+                </div>
+
+
             </div>
             <div class="textblob row-2-text">
                 <div class="textblobheader">
