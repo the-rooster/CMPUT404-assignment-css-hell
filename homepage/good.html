@@ -7,7 +7,7 @@
             padding: 0;
         }
         html {
-            background :aliceblue;
+            background :rgb(203, 222, 238);
         }
         .border {
             background: rgb(93, 90, 110);
@@ -69,13 +69,11 @@
             margin: 0px;
             padding: 0px;
         }
-
         .blog {
             display:flex;
             flex-direction: row;
-            background-color: aliceblue;
+            background: #fff;
         }
-
         .sidebar {
             height: 80vh;
             width: 24vw;
@@ -85,8 +83,8 @@
             align-self:flex-end;
             background-color: rgb(197, 203, 207);
             border-radius: 1%;
+            box-shadow: 5px 5px 10px #777;
         }
-
         .links {
             height: 20vh;
             width: 24vw;
@@ -95,8 +93,8 @@
             margin-bottom: 2vh;
             border-radius: 1%;
             background-color: rgb(197, 203, 207);
+            box-shadow: 5px 5px 10px #777;
         }
-
         .sidebarheader {
             height: 5vh;
             width: 15vw;
@@ -105,18 +103,19 @@
             font-weight: lighter;
             text-align: center;
             line-height: 5vh;
+            box-shadow: 5px 5px 10px #777
             
         }
-
         .textblobheader {
             height: 5vh;
             width: 20vw;
             background-color: #aaa;
             font-family:sans-serif;
-            border-radius: 5%;
+            border-radius: 1%;
+            box-shadow: 5px 5px 10px #777
+
 
         }
-
         .text {
             font-family: sans-serif;
             font-weight: lighter;
@@ -125,25 +124,20 @@
             margin-left:0;
             color: rgb(51, 50, 50);
             text-align: start;
-            transform: translateX(-5vw);
+            line-height: 3vh;
         }
-
         .textsection {
-            background:azure;
             display:flex;
             flex-direction: column;
         }
-
         .row-1-text {
             margin-left: 10vw;
             margin-bottom: 5vh;
         }
-
         .row-2-text {
             margin-left: 5vw;
             margin-bottom: 5vh;
         }
-
         .textblob {
             display: flex;
             flex-direction: row;
@@ -157,14 +151,28 @@
             justify-content: flex-start;
             align-content: flex-start;
             line-height: 5vh;
+            box-shadow: 5px 5px 10px #777;
 
         }
-
-        .pugpic {
+        .mypic {
             border-radius: 30%;
+            height: 22.5vh;
+            width: 22.5vh;
+            transform: translateX(-14vw) translateY(6vh) rotateZ(6deg);
+            box-shadow: 5px 5px 10px #777;
+        }
+        .historyicon {
             height: 23vh;
             width: 23vh;
-            transform: translateX(-14vw) translateY(5.5vh);
+            transform:translateX(27vw) translateY(3vh) rotateZ(-6deg);
+            filter: drop-shadow(5px 5px 6px #777)
+        }
+        .circuiticon {
+            border-radius: 30%;
+            height: 22.5vh;
+            width: 22.5vh;
+            transform: translateX(-14vw) translateY(6vh) rotateZ(6deg);
+            filter: drop-shadow(5px 5px 6px #777)
         }
     </style>
 </head>
@@ -176,7 +184,7 @@
         <div class="header">
         
             <div class="title">
-                Andrew Culberson
+                amjc://andrew.culberson
             </div>
             <div class="subtitle">
                 Software Developer
@@ -197,10 +205,10 @@
                 <div class="textblobheader">
                     Who Am I?
                 </div>
-                <img src="./content/meinitaly.jpeg" class="pugpic">
+                <img src="./content/meinitaly.jpeg" class="mypic">
                 
-                <div class="text">
-                    Hello there! My name is Andrew Culberson, and I am a soon to be graduate from the Computer Engineering - Software Co-op program
+                <div class="text" style="transform: translateX(-5vw) translateY(5vh);">
+                    Hello there! My name is Andrew Malcolm Joseph Culberson, and I am a soon to be graduate from the Computer Engineering - Software Co-op program
                     at the University of Alberta. I enjoy writing code, making music and climbing rocks. If you also enjoy these things, and wish to
                     discuss our common enjoyment of said things, feel free to reach out :)
                 </div>
@@ -211,10 +219,23 @@
                 <div class="textblobheader">
                     Professional History
                 </div>
+                
+                <img src="./content/history.png" class="historyicon">
+                <div class="text" style="transform: translateX(-20vw) translateY(8vh);">
+                    I am currently employed at Telus on the Wireless Devops Data & Tools team, and will be rejoining Telus in May 2023 as a member of the GTLP program.
+                    Previously, I worked as a deep learning research assistant with Defence Research and Development Canada for 8 months in 2021.
+                    
+                </div>
             </div>
             <div class="textblob row-1-text">
                 <div class="textblobheader">
                     What I have to offer
+                </div>
+                <img src="./content/circuit.png" class="circuiticon">
+                <div class="text" style="transform: translateX(-5vw) translateY(8vh);">
+                    Knowledgeable in many different domains including: machine learning, web development, security, game development, 
+                    project management.
+                    I bring a positive and excited energy to all the work I do, and try my best to make others feel the same.
                 </div>
             </div>
         </div>
@@ -223,8 +244,12 @@
         <div style="display: flex;flex-direction:column;">
             <div class="sidebar">
                 <div class="sidebarheader">
-                    Currently Learning
+                    Interesting Facts
                 </div>
+                <div class="text">
+                    hi
+                </div>
+
             </div>
             <div class="links">
                 <div class="sidebarheader">
