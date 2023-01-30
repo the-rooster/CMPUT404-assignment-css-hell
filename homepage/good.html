@@ -94,6 +94,8 @@
             border-radius: 1%;
             background-color: rgb(197, 203, 207);
             box-shadow: 5px 5px 10px #777;
+            display:flex;
+            flex-direction:row;
         }
         .sidebarheader {
             height: 5vh;
@@ -174,6 +176,19 @@
             transform: translateX(-14vw) translateY(6vh) rotateZ(6deg);
             filter: drop-shadow(5px 5px 6px #777)
         }
+
+        .sidebarlist{
+            font-family: sans-serif;
+            font-weight: lighter;
+            text-align: center;
+            font-size: large;
+            width: 24vw;
+            margin-left:0;
+            color: rgb(51, 50, 50);
+            text-align: start;
+            line-height: 10vh;
+            transform: translateX(5vw) translateY(5vh);
+        }
     </style>
 </head>
 
@@ -184,7 +199,7 @@
         <div class="header">
         
             <div class="title">
-                amjc://andrew.culberson
+                Andrew Culberson
             </div>
             <div class="subtitle">
                 Software Developer
@@ -244,10 +259,17 @@
         <div style="display: flex;flex-direction:column;">
             <div class="sidebar">
                 <div class="sidebarheader">
-                    Interesting Facts
+                    TLDR
                 </div>
-                <div class="text">
-                    hi
+                <div class="sidebarlist">
+                    <ul>
+                        <li>Graduating in April of 2023</li>
+                        <li>Software Engineering Co-op option</li>
+                        <li>Previous workterms with DRDC and Telus</li>
+                        <li>WebDev/Security/ML/Devops</li>
+                        <li>Multi instrumentalist</li>
+                        <li>Certified Fun-haver</li>
+                    </ul>
                 </div>
 
             </div>
@@ -255,6 +277,7 @@
                 <div class="sidebarheader">
                     My Links
                 </div>
+                <img src="./content/linkedin.png">
             </div>
         </div>
 
