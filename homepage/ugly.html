@@ -13,22 +13,53 @@
             overflow-y:scroll;
         }
         .border {
-            background: rgb(32, 56, 67);
+            background: rgb(53, 27, 12);
             height: 5vh;
             filter: drop-shadow(0px 2px 4px #000);
 
         }
+
+		@keyframes rotatingheader {
+			0% {
+				transform: translateX(-10vw);
+			}
+
+			50% {
+				transform: translateX(10vw);
+			}
+
+			100% {
+				transform: translateX(-10vw);
+			}
+		}
+
+		@keyframes rainbow{
+			0% {
+				filter: hue-rotate(0deg);
+			}
+
+			100% {
+				filter:hue-rotate(360deg);
+			}
+		}
+
         .topbar{
             display:flex;
             flex-direction: row;
             justify-content: flex-start;
             align-items: flex-start;
             background: rgb(34,91,149);
-            background: linear-gradient(0deg, rgba(34,91,149,1) 0%, rgba(47,164,224,1) 35%, rgba(43,146,228,1) 100%);
+            background: linear-gradient(45deg, rgb(196, 205, 21) 0%, rgb(100, 31, 156) 35%, rgb(13, 25, 35) 100%);
             height: 25vh;
             text-align: center;
             filter: drop-shadow(0px 0px 10px #000);
+			animation-name: rotatingheader;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			
         }
+
+
         .header {
             display:flex;
             flex-direction: column;
@@ -40,14 +71,17 @@
         }
         .headshot {
             border-radius: 100%;
-            border-color: rgb(51, 132, 204);
+            border-color: rgb(21, 180, 69);
             border-width: 2px;
-            filter: drop-shadow(0px 0px 7px #fff);
+            filter: drop-shadow(0px 0px 7px rgb(33, 173, 52));
             border-style: solid;
             margin-left: 5vw;
             margin-top: 2vh;
             height: 20vh;
             width: 20vh;
+			animation-name: rainbow;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
         }
         .nav-bar {
             display: flex;
@@ -57,7 +91,7 @@
         }
         .title {
             text-shadow: #aaa 0px 5px 2px;
-            color:aliceblue;
+            color:rgb(80, 169, 247);
             font-size: xxx-large;
             font-family:Arial, Helvetica, sans-serif;
             font-weight: bolder;
@@ -75,7 +109,7 @@
         .blog {
             display:flex;
             flex-direction: row;
-            background: #fff;
+            background: rgb(218, 15, 15);
         }
         .sidebar {
             height: 80vh;
@@ -84,7 +118,7 @@
             margin-top: 2vh;
             margin-bottom: 2vh;
             align-self:flex-end;
-            background-color: rgb(197, 203, 207);
+            background-color: rgb(134, 168, 21);
             border-radius: 1%;
             box-shadow: 5px 5px 10px #777;
         }
@@ -95,7 +129,7 @@
             margin-top: 2vh;
             margin-bottom: 2vh;
             border-radius: 1%;
-            background-color: rgb(197, 203, 207);
+            background-color: rgb(0, 153, 255);
             box-shadow: 5px 5px 10px #777;
             display:flex;
             flex-direction:row;
@@ -148,7 +182,7 @@
             flex-direction: row;
             height: 33%;
             width: 60vw;
-            background-color: rgb(197, 203, 207);
+            background-color: rgb(94, 135, 12);
             border-radius: 2%;
             font-family: sans-serif;
             font-weight: lighter;
@@ -159,25 +193,51 @@
             box-shadow: 5px 5px 10px #777;
 
         }
+
+		@keyframes kickflip {
+
+			0% {
+				transform: rotate3d(1,1,1,0deg);
+			}
+
+			100% {
+				transform: rotate3d(1,1,1,360deg);
+			}
+		}
+
+		@keyframes nickelback{
+			0% {
+				transform: rotate3d(0,1,0,0deg) translateX(0vw);
+			}
+
+			100% {
+				transform: rotate3d(0,1,0,360deg) translateX(100vw);
+			}
+		}
         .mypic {
             border-radius: 30%;
             height: 22.5vh;
             width: 22.5vh;
             transform: translateX(-14vw) translateY(6vh) rotateZ(6deg);
-            box-shadow: 5px 5px 10px #777;
+            box-shadow: 5px 5px 10px rgb(217, 255, 0);
+			animation-name: kickflip;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
         }
         .historyicon {
             height: 23vh;
             width: 23vh;
-            transform:translateX(27vw) translateY(3vh) rotateZ(-6deg);
-            filter: drop-shadow(5px 5px 6px #777)
+            filter: drop-shadow(5px 5px 6px rgb(242, 255, 0));
+			animation-name: nickelback;
+			animation-duration: 30s;
+			animation-iteration-count: infinite;
         }
         .circuiticon {
             border-radius: 30%;
             height: 22.5vh;
             width: 22.5vh;
             transform: translateX(-14vw) translateY(6vh) rotateZ(6deg);
-            filter: drop-shadow(5px 5px 6px #777)
+            filter: drop-shadow(5px 5px 6px rgb(229, 255, 0))
         }
 
         .sidebarlist{
@@ -187,7 +247,7 @@
             font-size: large;
             width: 24vw;
             margin-left:0;
-            color: rgb(51, 50, 50);
+            color: rgb(248, 12, 12);
             text-align: start;
             line-height: 10vh;
             transform: translateX(5vw) translateY(5vh);
@@ -230,7 +290,7 @@
                 <div class="textblobheader">
                     Who Am I?
                 </div>
-                <img src="./content/meinitaly.jpeg" class="mypic">
+                <img src="./bad_content/skateboarddog.jpg" class="mypic">
                 
                 <div class="text" style="transform: translateX(-5vw) translateY(5vh);">
                     Hello there! My name is Andrew Malcolm Joseph Culberson, and I am a soon to be graduate from the Computer Engineering - Software Co-op program
@@ -245,7 +305,7 @@
                     Professional History
                 </div>
                 
-                <img src="./content/history.png" class="historyicon">
+                <img src="./bad_content/nickelback.jpg" class="historyicon">
                 <div class="text" style="transform: translateX(-20vw) translateY(8vh);">
                     I am currently employed at Telus on the Wireless Devops Data & Tools team, and will be rejoining Telus in May 2023 as a member of the GTLP program.
                     Previously, I worked as a deep learning research assistant with Defence Research and Development Canada for 8 months in 2021.
@@ -256,7 +316,7 @@
                 <div class="textblobheader">
                     What I have to offer
                 </div>
-                <img src="./content/circuit.png" class="circuiticon">
+                <img src="./bad_content/monkey.gif" class="circuiticon">
                 <div class="text" style="transform: translateX(-5vw) translateY(8vh);">
                     Knowledgeable in many different domains including: machine learning, web development, security, game development and 
                     project management.
